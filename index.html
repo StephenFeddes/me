@@ -17,11 +17,24 @@
             background: #333;
             color: #fff;
             padding: 20px;
+            position: relative;
         }
         .main-info h1 {
             margin: 0;
         }
-        .hobbies, .lewis, .course, .job {
+        .main-info a {
+            color: white;
+        }
+        ul {
+            list-style-type: square;
+        }
+        img {
+            position: absolute;
+            height: 200px;
+            top: 45px;
+            left: calc(50% - 100px);
+        }
+        section {
             background: #e7e7e7;
             padding: 15px;
             margin-bottom: 10px;
@@ -31,34 +44,37 @@
 <body>
     <div class="container">
         <header class="main-info">
-            <h1>Stephen Feddes</h1>
-            <h1>Preferred Name: Steve</h1>
+            <h2>Stephen Feddes</h2>
+            <img src="me.PNG" alt="Steve">
+            <h2>Preferred Name: Steve</h2>
+            <a href="mailto:stephenpfeddes@lewisu">Lewis email: stephenpfeddes@lewisu.edu</a>
+            <h2>Discord: Stephen Feddes#0729</h2>
         </header>
-
-        <section class="lewis">
-			<h2>Year at Lewis: 2nd</h2>
-			<h2>Lewis major/minor/concentrations: Computer Science and Data Science majors</h2>
-			<h2>Reasons for pursuing this degree: Passion for programming and problem solving</h2>
+        <section>
+            <h2>Introduction</h2>
+            <p>
+                I am a student at Lewis University majoring in computer science and data science.
+                I am in my final semester. I have seven siblings, two of which graduated from Lewis.
+                I had a web development internship last summer.
+            </p>
         </section>
-
-		<section class="course">
-            <h2>Reasons for Taking This Course</h2>
-	    <p>Developing software with a team</p>
-            <p>Required</p>
+        <section>
+            <h2>What I Hope to Learn in this Course</h2>
+            <ul>
+                <li>Collaborating with others to make software</li>
+                <li>MongoDB</li>
+                <li>Software development life cycle</li>
+                <li>Detailed testing</li>
+            </ul>
         </section>
-
-		<section class="job">
-            <p>Current/Recent Job</p>
-			<p>I was recently employed as a web development intern this Summer</p>
-        </section>		
-
         <section class="hobbies">
             <h2>Hobbies and Special Interests</h2>
-            <p>Piano</p>
-	    <p>Basketball</p>
-	    <p>Cornhole tossing</p>
+            <ul>
+                <li><a href="https://en.wikipedia.org/wiki/Piano">Piano</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Basketball">Basketball</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Cornhole">Cornhole tossing</a></li>
+            </ul>
         </section>
-
         <section class="fun-fact">
             <h2>Fun Fact</h2>
             <p>I play piano regularly for my church</p>
